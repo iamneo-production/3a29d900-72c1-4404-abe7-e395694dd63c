@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Card, Row, Col, Container} from "react-bootstrap";
 import './admin.css';
 import axios from '../../axios.jsx';
-import complaint from "../Images/complaints.jpg";
+import complaints from '../../Images/complaints.jpg';
 
 function AdminComplaint() {
 
@@ -30,7 +30,7 @@ function AdminComplaint() {
     return (
         <div className="admin_scrollbar">
             
-            <img src={complaint} alt="complaints" className="complaint_img" />
+            <img src={complaints} alt="complaints" className="complaint_img" />
             
             <div className="complaint_body">
                 <h1><strong>Customer Complaints</strong></h1>
