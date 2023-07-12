@@ -1,0 +1,100 @@
+/*customer scrollbar*/
+
+.customer_scrollbar {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  margin-bottom: 10px;
+}
+
+/* Customize the scroll bar appearance */
+.customer_scrollbar::-webkit-scrollbar {
+  padding-top: 1px;
+  width: 14px;
+  height: 10px; /* Set the width of the scrollbar */
+  
+}
+.customer_scrollbar::-webkit-scrollbar-track {
+  background: rgb(192, 193, 193);
+}
+
+.customer_scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent,#3d3030);
+  border-radius: 5px;/* Rounded corners for the thumb */
+  
+}
+
+.customer_scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent,#111112);/*#30ff00*/
+}
+
+/*customer apply job*/
+.cus_apply{
+  padding: 50px 20px 85px;
+}
+
+.customerapplyjob{
+  background-image: url("/src/Images/customerimage.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150% 100%; 
+}
+
+.customer_dashboard{
+  background-image: url("/src/Images/customerimage.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%; 
+  
+}
+
+/* Customer appliedjobs bg-color:rgba(110, 123, 131, 0.674);*/ 
+.cus_viewapplied{
+  background-image: url("/src/Images/customerimage.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%; 
+}
+
+.cus_card{
+  border-radius: 20px 30px 20px;
+  background-color: rgba(167, 168, 168, 0.696);
+  border-radius: 7px;
+  box-shadow:4px 4px 5px black;
+  
+}
+.cus_searchbox{
+  padding-left: 50px;
+}
+
+
+.cus_col b{
+  color: black;
+}
+
+.review_btn{
+  padding-right: 1px;
+}
+
+.mc-3{
+  padding-bottom: 60px;
+}
+
+.mt-4{
+  border-radius: 10px 20px 20px;
+  box-shadow: 4px 4px 6px rgb(205, 210, 200);
+}
+
+.customer_card{
+  border-radius: 20px 20px 20px;
+  border: none;
+  padding-right: 0px;   
+}
+
+.customerrow b{
+  color: white;
+}
+
+.customerrow{
+  padding-bottom: 50px;
+}
