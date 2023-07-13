@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import {Button} from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
 import { FaStar } from "react-icons/fa";
-import axios from '../axios';
+import axios from '../../axios.jsx';
 import './chatbox.css';
 import { toast } from "react-toastify";
 
