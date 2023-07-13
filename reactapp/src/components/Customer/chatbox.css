@@ -1,7 +1,6 @@
 
 .chatbox {
     position:fixed; 
-    right:auto;
     top: 50%;
     transform: translateY(-50%);
     width: 320px;
@@ -9,7 +8,7 @@
     right: 10px;
     background-color: #fbfafa;
     border: 1px solid #ccc;
-    border-radius: 5px;;
+    border-radius: 5px;
     padding: 0px;
     font-family: Arial, sans-serif;
   }

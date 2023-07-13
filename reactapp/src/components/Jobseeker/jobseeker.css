@@ -65,7 +65,6 @@
   }
   
   .jobseeker_card{
-    border-radius: 20px 30px 20px;
     background-color: rgba(227, 226, 223, 0.24);
     border-radius: 8px; 
     box-shadow:4px 4px 10px black; 
@@ -140,8 +139,11 @@
     background-color: #ede8e8;
   }
   
+  .review_body{
+    padding-bottom: 30px;
+  }
+
   .review_card{
-    border-radius: 20px 30px 20px;
     background-color: rgba(195, 201, 204, 0.674);
     border-radius: 8px; 
     box-shadow:4px 4px 10px black; 

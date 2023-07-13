@@ -174,8 +174,8 @@ labels.forEach((label, index) => {
             <Container>
             <h2><b>Data</b></h2>
                 {data.length > 0 ? (
-                    data.map((list,index) => (
-                        <div className="Report_body" key={index}>
+                    data.map((list) => (
+                        <div className="Report_body" >
                             <Row className="Report_row ">
                                 <Col >
                                     <strong>1. Total Users </strong>
