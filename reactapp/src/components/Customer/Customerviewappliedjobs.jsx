@@ -175,8 +175,8 @@ function Customerviewappliedjobs() {
                                 </div>
                                 {/* Chatbox messages */}
                                 <div className="chatbox-messages">
-                                  {chatMessages.map((msg, index) => (
-                                    <div className={`chatbox-message ${msg.sender === "Customer" ? "chatbox-message-customer" : "chatbox-message-candidate"}`}>
+                                  {chatMessages.map((msg, keyid) => (
+                                    <div key={keyid} className={`chatbox-message ${msg.sender === "Customer" ? "chatbox-message-customer" : "chatbox-message-candidate"}`}>
                                       <div className="message-content">
                                         {msg.content}
                                       </div>
