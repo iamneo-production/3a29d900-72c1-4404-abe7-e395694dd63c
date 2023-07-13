@@ -65,8 +65,7 @@ padding-bottom: 1px;
   text-decoration: none;
 }
 .dashboard_card{ 
-  border-radius: 20px 30px 20px;
-  background-color: rgba(215, 218, 220, 0.542);;
+  background-color: rgba(215, 218, 220, 0.542);
   border-radius: 7px;
   box-shadow:2px 2px 5px black;
 }
@@ -79,8 +78,8 @@ padding-bottom: 1px;
 }
 
 .candidate_card{
-  border-radius: 20px 30px 20px;
-  background-color: rgba(190, 194, 196, 0.542);;
+ 
+  background-color: rgba(190, 194, 196, 0.542);
   border-radius: 7px;
   box-shadow:2px 2px 5px black;
 }
@@ -149,13 +148,10 @@ border: none;
 border-top: 2px solid black;
 width: 46%;
 margin: 0 auto;
-margin-top: 5px;
-margin-bottom: 5px;
 }
 
 
 .cmp_cardbody{
-border-radius: 20px 30px 20px;
 background-color: rgba(190, 194, 196, 0.542);
 border-radius: 7px;
 box-shadow:2px 2px 5px black;
