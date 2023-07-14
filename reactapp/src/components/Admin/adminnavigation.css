@@ -1,0 +1,67 @@
+
+.admin_headers h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: x-large;
+ }
+
+.admin_headers li,a,button{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:white;
+    text-decoration: none;
+}
+
+.admin_headers{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px 1px;
+    background-color: rgb(2, 8, 72);
+}
+
+.admin-logo{
+    width: 110%;
+    height: 60px;
+    padding-bottom: 2px;
+}
+
+.admin_nav{
+    list-style: none;
+}
+
+.admin_nav li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.admin_nav li a {
+    transition: all 0.3s ease 0s;
+    color: white;
+    text-decoration: none;
+}
+
+.admin_nav li a:hover{
+    color:white;
+    font-size: 25px;
+    
+}
+.admin_nav li a.active{
+    font-size: 25px;
+}
+
+.admin_logout button:hover{
+    font-size: 25px;
+    background-color: rgb(2, 8, 72);
+}
+.admin_logout button{
+    border:none;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+
