@@ -1,0 +1,190 @@
+/*Admin scrollbar*/
+
+.admin_scrollbar {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  padding: 8px;
+  margin-bottom: 1px;
+  margin-top: 3px;
+}
+
+
+
+/* Customize the scroll bar appearance */
+.admin_scrollbar::-webkit-scrollbar {
+  padding-top: 1px;
+  width: 14px;
+  height: 10px; /* Set the width of the scrollbar */
+  
+}
+.admin_scrollbar::-webkit-scrollbar-track {
+  background:#0d0832;
+}
+
+.admin_scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent,#2b19b4);
+  border-radius: 5px;/* Rounded corners for the thumb */
+  
+}
+
+.admin_scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent,#9aa4bc);
+}
+
+
+/* Admin Dashboard side styling*/
+.Admin_dashboard{
+  background-color: rgb(233, 239, 240);
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.md-3{
+padding-bottom: 15px;
+}
+
+.md-4{
+border-radius: 20px 20px 20px;
+border: none;
+background-color: #696868;
+}
+
+.adm_col b,p,i{
+color: black;
+}
+
+.adm_col{
+padding-bottom: 1px;
+}
+
+.dashboard_btn li{
+  display: inline-block;
+  padding: 0px 10px;
+  justify-content:space-between;
+  text-decoration: none;
+}
+.dashboard_card{ 
+  background-color: rgba(215, 218, 220, 0.542);
+  border-radius: 7px;
+  box-shadow:2px 2px 5px black;
+}
+
+
+/* Admincandidate side styling*/
+.admin_candidate{
+  background-color: rgb(231, 236, 238);
+  padding-bottom: 20px;
+}
+
+.candidate_card{
+ 
+  background-color: rgba(190, 194, 196, 0.542);
+  border-radius: 7px;
+  box-shadow:2px 2px 5px black;
+}
+.candidate_row b{
+color: black;
+}
+
+/* Admineditopenings side styling */
+
+.admineditjob{
+background-color: rgb(203, 217, 222);
+padding: 50px 20px 85px;
+}
+
+.adm_editrow strong{
+color: black;
+}
+
+.admin_editperson{
+background-color: rgb(203, 217, 222);
+padding: 50px 20px 85px;
+}
+/*Admin Report styling*/
+.Report_head h1{
+text-align: center;
+color: blue;
+padding: 20px;
+padding-bottom: 30px;
+}
+
+.Report_body{
+padding-bottom: 50px;
+}
+
+.Report_row {
+padding: 15px;
+}
+
+
+
+
+/* Complaint page styling */
+
+.complaint_img{
+padding: 10px 10px 10px;
+width: 99%;
+height: 400px;
+border: none;
+}
+
+.complaint_body{
+padding-bottom: 20px;
+}
+
+.complaint_body h1{
+text-align: center;
+text-decoration: none;
+}
+
+.complaint_body h1 strong{
+color:#2d237a;
+}
+
+.line {
+border: none;
+border-top: 2px solid black;
+width: 46%;
+margin: 0 auto;
+}
+
+
+.cmp_cardbody{
+background-color: rgba(190, 194, 196, 0.542);
+border-radius: 7px;
+box-shadow:2px 2px 5px black;
+}
+
+.cmp_Reslove{
+background-color: rgb(29, 93, 19);
+color: white;
+text-align: center;
+width: 80px;
+height: 25px;
+}
+
+.cmp_pending{
+background-color: rgb(200, 203, 43);
+color: white;
+text-align: center;
+width: 80px;
+height: 25px;
+}
+
+/* Add admin */
+.admin_signup{
+background-color: rgb(203, 217, 222);
+padding-top: 100px;
+padding-bottom: 180px;
+}
+.adm_signupform {
+max-width: 400px;
+margin: auto;
+padding: 20px;
+background-color: rgba(143, 180, 180, 0.8);
+border-radius: 20px;
+width: 100%;
+box-shadow: 2px 2px 5px black;
+}
