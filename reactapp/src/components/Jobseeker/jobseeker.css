@@ -1,0 +1,157 @@
+
+
+.home{
+    text-align: center;
+  }
+  .reg{
+    color: white;
+    text-align: center;
+  }
+  
+  body {
+    overflow: hidden; /* Hide the scrollbar for the body */
+  }
+  
+  .scroll-container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    margin-bottom: 10px;
+    
+  }
+  
+  
+  
+  /* Customize the scroll bar appearance */
+  .scroll-container::-webkit-scrollbar {
+    padding-top: 1px;
+    width: 14px;
+    height: 10px; /* Set the width of the scrollbar */
+    
+  }
+  .scroll-container::-webkit-scrollbar-track {
+    background: rgb(192, 193, 193);
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent,#3a3b3a);
+    border-radius: 5px;/* Rounded corners for the thumb */
+    
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent,#a8aaa7);/*#30ff00*/
+  }
+  
+  /* jobseeker dashboard */
+  
+  .job_bgimg{
+    background-image: url("/src/Images/JobImage.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+  }
+  
+  .mt-3{
+    padding-bottom: 40px;
+  }
+  
+  .mb-4{
+    border-radius: 20px 20px 20px;
+    border: none;
+    padding-right: 1px;
+    
+  }
+  
+  .jobseeker_card{
+    background-color: rgba(227, 226, 223, 0.24);
+    border-radius: 8px; 
+    box-shadow:4px 4px 10px black; 
+    border: 3px solid #000;
+    box-sizing: border-box;
+    border-width: 1px;
+  }
+  
+  .jobcard_col b,strong{
+    color: black;
+  }
+  
+  .applyjob{
+    background-image: url("/src/Images/JobImage.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-size: 150% 100%;
+    padding-bottom: 90px;
+    padding-top: 50px;
+    
+  }
+  .row{
+    padding: 30px 20px 20px;
+  }
+  .jobseeker_row strong{
+    color: black;
+  }
+  
+  .Not_Avialble{
+    color: white;
+    background-color: rgba(230, 30, 30, 0.763);
+    padding-right: 1px;
+  }
+  
+  /* review */
+  .job_review_img{
+    background-image: url("/src/Images/JobImage.jpg");
+    background-repeat: no-repeat;
+  
+    background-size: cover;
+  }
+  
+  .review_img{
+    background-image: url("/src/Images/JobImage.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    height: 40%;
+    border: none;
+  }
+  
+  .review_body h1{
+    padding-top: 10px;
+    text-align: center;
+  }
+  
+  .review_body h1 strong{
+    color: #080700;
+  }
+  
+  .review_hr{
+    border: none;
+    border-top: 5px solid rgb(7, 0, 0);
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .m-4{
+    border-radius: 10px 20px 20px;
+    box-shadow: 0 0 5px black;
+    background-color: #ede8e8;
+  }
+  
+  .review_body{
+    padding-bottom: 30px;
+  }
+
+  .review_card{
+    background-color: rgba(195, 201, 204, 0.674);
+    border-radius: 8px; 
+    box-shadow:4px 4px 10px black; 
+    border: 1px solid #000;
+    box-sizing: border-box;
+    border-width: 1px;
+  }
+  .review_row{
+    padding: 0px;
+  }
+  
