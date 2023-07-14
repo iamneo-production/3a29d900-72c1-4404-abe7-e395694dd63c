@@ -1,0 +1,54 @@
+
+/* Login.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/src/Images/Login.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%; 
+    /* Adjust the width and height values*/
+  }
+  
+  .login-content {
+    background-color: rgba(181, 188, 188, 0.8);
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  
+  .loginHead {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .mb-3 {
+    margin-bottom: 20px;
+  }
+  
+  
+  .mb-3 span {
+    color: red;
+  }
+  
+  #loginButton {
+    width: 100%;
+    background-color: rgb(28, 28, 29);
+  }
+  
+  #signupLink {
+    text-decoration: none;
+    color: rgb(38, 12, 210);
+  }
+  
+  #signupLink:hover {
+    text-decoration: underline;
+  }
