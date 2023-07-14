@@ -40,7 +40,7 @@
           "dependencies": {
             "Microsoft.AspNet.WebApi.Cors": {
               "target": "Package",
-              "version": "[5.2.9, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -66,7 +66,7 @@
             },
             "NUnit": {
               "target": "Package",
-              "version": "[3.13.3, )"
+              "version": "[3.13.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

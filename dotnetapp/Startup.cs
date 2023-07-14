@@ -32,6 +32,10 @@ namespace dotnetapp
            // services.AddDbContext<ProductDBContext>(opt => opt.UseSqlServer(connectionString));
            // services.AddScoped<IProductService, ProductService>();
             services.AddCors();
+            services.AddCors(p => p.AddPolicy("corspolicy",build =>
+            {
+                build.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+            }));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -43,6 +47,8 @@ namespace dotnetapp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -50,10 +56,11 @@ namespace dotnetapp
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "dotnetapp v1"));
             }
 
+            app.UseCors("corspolicy");
+            
             app.UseHttpsRedirection();
 
             app.UseRouting();
-            app.UseCors(options => options.WithOrigins("https://8081-ebdbcdadadfaffccecdfccfeafefcdfdfda.project.examly.io/").AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseAuthorization();
 
