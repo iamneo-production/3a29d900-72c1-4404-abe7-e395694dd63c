@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import Login from './components/auth/Login';
+import Signup from './components/auth/Signup';
+import PrivateRoute from './components/auth/PrivateRoutes.jsx';
+import AdminBaseComponent from './components/Admin/AdminBaseComponent.jsx';
+import CustomerBaseComponent from './components/Customer/CustomerBaseComponent.jsx';
+import JobseekerBaseComponent from './components/Jobseeker/JobseekerBaseComponent.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+      <Router>
+        <Routes>
+          <Route path='/Admin/*' element={<PrivateRoute element={<AdminBaseComponent />} authRole="Admin" allowedRoles={['Admin']} />} />
+          <Route path="/customer/*" element={<PrivateRoute element={<CustomerBaseComponent />} authRole="User" allowedRoles={['User']} />} />
+          <Route path='/jobseeker/*' element={<PrivateRoute element={<JobseekerBaseComponent />} authRole="Jobseeker" allowedRoles={['Jobseeker']}  />} />
+          
+          <Route exact path="/" element={<Login />} />
+          <Route exact path="/Signup" element={<Signup />} />
+        </Routes>
+      </Router>
     </div>
+
   );
 }
-
 export default App;

@@ -1,0 +1,65 @@
+
+.Cus_headers li,button{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:white;
+    text-decoration: none;
+}
+
+.Cuslogo-image{
+    width: 110%;
+    height: 60px;
+    padding-bottom: 2px;
+}
+
+.Cus_headers{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 10px 1px;
+    background-color: rgb(35, 35, 35); 
+}
+.customernav{
+    list-style: none;
+}
+
+.customernav li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.customernav li a {
+    transition: all 0.3s ease 0s;
+    color: white;
+    text-decoration: none;
+}
+
+.customernav li a:hover{
+    color:white;
+    font-size: 20px;
+    
+}
+.customernav li a.active{
+    font-size: 25px;
+}
+
+.logoutbtn button:hover{
+    font-size: x-large;
+    background-color: rgb(13, 75, 134);
+}
+.logoutbtn button{
+    border:none;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.custom-toast-logout{
+    color: rgb(8, 8, 8);
+}
+
+
+
