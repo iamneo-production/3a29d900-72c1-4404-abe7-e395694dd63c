@@ -21,7 +21,7 @@ const Login = (props) => {
     // Validate email field
     if (!email.trim()) {
       errors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
+    } else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,}$/.test(email)) {
       errors.email = 'Email is invalid';
     }
 
