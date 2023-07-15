@@ -37,7 +37,7 @@ function Admindashboard() {
 
     const handleDelete = (item) => {
         //Delete Theme Api
-        var show = window.confirm(`Confirm to delete : ${item.jobDescription}`);
+        const show = window.confirm(`Confirm to delete : ${item.jobDescription}`);
         if (show) {
             axios.delete(`admin/deleteJob/${item.jobId}`)
                 .then(response => {
