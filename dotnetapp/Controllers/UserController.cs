@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 namespace dotnetapp.Controllers
 {
     [ApiController]
-    [Route("api/")]
+  
     public class UserController : ControllerBase
     {
         private BusinessLayer bussiness_layer = new BusinessLayer();

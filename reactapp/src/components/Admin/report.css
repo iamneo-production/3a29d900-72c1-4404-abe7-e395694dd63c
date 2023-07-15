@@ -1,0 +1,35 @@
+.Report_head h3 {
+    text-align: center;
+    color: blue;
+    padding: 5px;
+    padding-bottom: 30px;
+}
+.piechart h2{
+    text-align: center;
+    color: black;
+}
+
+
+.Report_row {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    width: 500px;
+    border-width: 3px;
+}
+
+.Report_row b{
+    color: blue;
+}
+
+.report_btn{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.piechart{
+    width:10cm;
+    height: 10cm;
+    justify-content:flex-end;
+}

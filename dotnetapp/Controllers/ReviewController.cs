@@ -8,7 +8,7 @@ using dotnetapp.Models;
 namespace dotnetapp.Controllers
 {
     [ApiController]
-    [Route("api/")]
+  
     public class ReviewController : ControllerBase
     {
         private BusinessLayer bussiness_layer = new BusinessLayer();

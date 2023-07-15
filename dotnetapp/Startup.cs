@@ -27,6 +27,10 @@ namespace dotnetapp
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddCors(p => p.AddPolicy("corspolicy",build =>
+            {
+                build.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+            }));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -43,6 +47,8 @@ namespace dotnetapp
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "dotnetapp v1"));
             }
+
+            app.UseCors("corspolicy");
 
             app.UseHttpsRedirection();
 

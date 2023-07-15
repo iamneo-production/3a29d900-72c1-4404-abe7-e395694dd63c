@@ -8,7 +8,7 @@ using dotnetapp.Models;
 namespace dotnetapp.Controllers
 {
     [ApiController]
-    [Route("api/")]
+
     public class ChatBoxController : ControllerBase
     {
         private BusinessLayer bussiness_layer = new BusinessLayer();
