@@ -8,7 +8,6 @@ import './report.css';
 
 function Report() {
    
-    const [data, setdata] = useState([]);
     const [jobCount, setjobCount] = useState("");
     const [jobSeekerCount, setjobSeekerCount] = useState("");
     const [userCount, setuserCount] = useState("");
@@ -30,7 +29,6 @@ function Report() {
                     "Content-Type": "application/json"
                 }
             }).then((result) => {
-                setdata(result.data);
                 const api = result.data;
                 if (api.length > 0) {
                     const api_data = api[0];
@@ -173,16 +171,14 @@ labels.forEach((label, index) => {
             <div>
             <Container>
             <h2><b>Data</b></h2>
-                {data.length > 0 ? (
-                    data.map((list,index) => (
-                        <div className="Report_body" key={index}>
+                        <div className="Report_body" >
                             <Row className="Report_row ">
                                 <Col >
                                     <strong>1. Total Users </strong>
                                 </Col>
                                 <Col>
                                 <strong>: </strong>
-                                <b>&nbsp;&nbsp;{list.userCount}</b>
+                                <b>&nbsp;&nbsp;{userCount}</b>
                                 </Col>
                             </Row>
                             <Row className="Report_row">
@@ -191,7 +187,7 @@ labels.forEach((label, index) => {
                                 </Col>
                                 <Col>
                                     <strong>: </strong>
-                                    <b>&nbsp;&nbsp;{list.jobSeekerCount}</b>
+                                    <b>&nbsp;&nbsp;{jobSeekerCount}</b>
                                 </Col>
                             </Row>
                             <Row className="Report_row">
@@ -200,7 +196,7 @@ labels.forEach((label, index) => {
                                 </Col>
                                 <Col>
                                     <strong>: </strong>
-                                    <b>&nbsp;&nbsp;{list.jobCount}</b>
+                                    <b>&nbsp;&nbsp;{jobCount}</b>
                                 </Col>
                             </Row>
                             <Row className="Report_row">
@@ -209,7 +205,7 @@ labels.forEach((label, index) => {
                                 </Col>
                                 <Col>
                                     <strong>: </strong>
-                                    <b>&nbsp;&nbsp;{list.expireJobs}</b>
+                                    <b>&nbsp;&nbsp;{expireJobs}</b>
                                 </Col>
                             </Row>
                             <Row className="Report_row">
@@ -218,15 +214,10 @@ labels.forEach((label, index) => {
                                 </Col>
                                 <Col>
                                     <strong>: </strong>
-                                    <b>&nbsp;&nbsp;{list.activeJobs}</b>
+                                    <b>&nbsp;&nbsp;{activeJobs}</b>
                                 </Col>
                             </Row>
                         </div>
-
-                    ))
-                ) : (
-                    <p>Loading</p>
-                )}
             </Container>
             </div>
             </div>

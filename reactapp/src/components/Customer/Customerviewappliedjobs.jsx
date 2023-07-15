@@ -175,8 +175,8 @@ function Customerviewappliedjobs() {
                                 </div>
                                 {/* Chatbox messages */}
                                 <div className="chatbox-messages">
-                                  {chatMessages.map((msg, index) => (
-                                    <div key={index} className={`chatbox-message ${msg.sender === "Customer" ? "chatbox-message-customer" : "chatbox-message-candidate"}`}>
+                                  {chatMessages.map((msg) => (
+                                    <div key={msg.id} className={`chatbox-message ${msg.sender === "Customer" ? "chatbox-message-customer" : "chatbox-message-candidate"}`}>
                                       <div className="message-content">
                                         {msg.content}
                                       </div>
@@ -186,7 +186,7 @@ function Customerviewappliedjobs() {
                                 {/* User input textbox */}
                                 <div className="chatbox-footer">
                                   <input type="text" className="chatbox-input" placeholder="Type your message..." value={message} onChange={handleInputChange} />
-                                  <button className="chatbox-button" onClick={() => sendMessage(item)}><i className="bi bi-send-fill" /></button>
+                                  <button className="chatbox-button" onClick={() => sendMessage()}><i className="bi bi-send-fill" /></button>
                                 </div>
                               </div>
                             )} 

@@ -36,7 +36,7 @@ namespace dotnetapp
             {
                 build.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
             }));
-
+            
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -47,8 +47,6 @@ namespace dotnetapp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -57,7 +55,7 @@ namespace dotnetapp
             }
 
             app.UseCors("corspolicy");
-            
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
