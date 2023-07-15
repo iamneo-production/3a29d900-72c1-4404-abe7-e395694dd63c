@@ -14,11 +14,13 @@ function Addadmin(){
   const [errors, setErrors] = useState({});
   const [userRole, setUserRole] = useState('admin');
   const navigate = useNavigate();
-  const MIN_PASSWORD_LENGTH = 6;
+  
 
   const validateForm = () => {
     const errors = {};
     setUserRole('admin');
+    const MIN_PASSWORD_LENGTH = 6;
+    const message = 'password is required';
     
     // Email validation
     if (!email) {
@@ -29,7 +31,7 @@ function Addadmin(){
 
     // Password validation
     if (!password) {
-      errors.password = 'Password is required';
+      errors.password = `${message}`;
     } else if (password.length < MIN_PASSWORD_LENGTH) {
       errors.password = `Password should be at least ${MIN_PASSWORD_LENGTH} characters long`;
     }
