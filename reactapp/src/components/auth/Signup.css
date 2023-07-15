@@ -1,0 +1,54 @@
+
+.signup-container {
+    background-image: url('/src/Images/Register.jpeg');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+  }
+  
+  .signup-content {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(198, 206, 206, 0.8);
+    border-radius: 20px;
+    width: 100%;
+  }
+  
+  .loginHead {
+    text-align: center;
+  }
+  
+  .select {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .button {
+    text-align: center;
+  }
+  
+  
+  .text {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #loginLink {
+    text-decoration: none;
+    color: rgb(12, 63, 231);
+  }
+  option{
+    color: black;
+  }
+  
+  .text-muted b{
+    color: black;
+  }
+  
+  .mb-3 span{
+    color: red;
+  } 
+  

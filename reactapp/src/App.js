@@ -1,11 +1,12 @@
 import React from 'react';
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import Login from './components/auth/Login';
-import Signup from './components/auth/Signup';
+import Signup from './components/auth/Signup.jsx';
 import PrivateRoute from './components/auth/PrivateRoutes.jsx';
 import AdminBaseComponent from './components/Admin/AdminBaseComponent.jsx';
 import CustomerBaseComponent from './components/Customer/CustomerBaseComponent.jsx';
 import JobseekerBaseComponent from './components/Jobseeker/JobseekerBaseComponent.jsx';
+
 
 function App() {
   return (
