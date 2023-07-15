@@ -89,7 +89,7 @@ function Jobseekerappliedjob() {
                 <Container className='mt-3' >
                     <Row xs={1} sm={1} md={1} lg={1}>
                         {data.map((item, index) => (
-                            <Col xs={14} sm={11} md={11} lg={8} key={index}>
+                            <Col xs={14} sm={11} md={11} lg={8} key={item.id}>
                                 <Card id={`AppliedGrid${index + 1}`} className="m-4" style={{ cardStyle }}>
                                     <Card.Body className = "jobseeker_card">
                                         <Row>

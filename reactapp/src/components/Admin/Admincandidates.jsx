@@ -34,7 +34,7 @@ function AdminCandidates() {
 
     const handleDelete = (item) => {
         //Delete Theme Api
-       var delete_result = window.confirm(`confirm to delete : ${item.personEmail}`);
+       const delete_result = window.confirm(`confirm to delete : ${item.personEmail}`);
        if(delete_result){
         axios.delete(`jobseeker/deleteProfile/${item.id}`)
             .then(response => {
@@ -50,7 +50,7 @@ function AdminCandidates() {
     }
     
     const handleEdit = (item) =>{
-        var edit_result = window.confirm(` Edit : ${item.personEmail} details`);
+        const edit_result = window.confirm(` Edit : ${item.personEmail} details`);
         if(edit_result){
             navigate ('/Admin/Editcandidates',{
                 state : {item}

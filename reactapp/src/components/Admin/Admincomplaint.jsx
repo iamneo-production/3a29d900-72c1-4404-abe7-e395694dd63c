@@ -39,8 +39,8 @@ function AdminComplaint() {
                     <Row xs={1} sm={1} md={1} lg={1}>
                         {data.map((item, index) => (
                             item.userRole === "user" ? (
-                            <Col xs={14} sm={12} md={9} lg={8} key={index}>
-                                <Card  id={`ReviewGrid${index + 1}`} className="mb-4" >
+                            <Col xs={14} sm={12} md={9} lg={8} key={item.complaintId}>
+                                <Card  id={`CustomercomGrid${index + 1}`} className="mb-4" >
                                     <Card.Body className="cmp_cardbody">
                                         <Row className="complaint_row">
                                             <Col >
@@ -73,8 +73,8 @@ function AdminComplaint() {
                 <Row xs={1} sm={1} md={1} lg={1}>
                     {data.map((item, index) => (
                         item.userRole === "job seeker" ? (
-                        <Col xs={14} sm={12} md={9} lg={8} key={index}>
-                            <Card  id={`ReviewGrid${index + 1}`} className="mb-4" >
+                        <Col xs={14} sm={12} md={9} lg={8} key={item.complaintId}>
+                            <Card  id={`JobseekercomGrid${index + 1}`} className="mb-4" >
                                 <Card.Body className="cmp_cardbody">
                                     <Row className="complaint_row">
                                         <Col >
