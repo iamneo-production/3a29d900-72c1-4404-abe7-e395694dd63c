@@ -5,7 +5,7 @@ import Jobseekerappliedjob from './Jobseekerappliedjob';
 import Jobseekerdashboard from './Jobseekerdashboard';
 import Jobseekernavigation from "./Jobseekernavigation";
 import Jobseekerprofile from './Jobseekerprofile';
-import JobseekerReviews from './JobseekerReview';
+import JobseekerReviews from './JobseekerReviews';
 
 function JobseekerBaseComponent() {
     return (
