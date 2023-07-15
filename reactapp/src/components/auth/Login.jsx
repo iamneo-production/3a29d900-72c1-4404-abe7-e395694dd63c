@@ -18,23 +18,25 @@ const Login = (props) => {
 
   const validateForm = () => {
     const errors = {};
-    // Validate email field
-    if (!email.trim()) {
-      errors.email = 'Email is required';
-    } else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,}$/.test(email)) {
-      errors.email = 'Email is invalid';
-    }
-
-    // Validate password field
-    if (!password.trim()) {
-      errors.password = 'Password is required';
-    }
-    else if (password.length < 5) {
-      errors.password = 'Password must be at least 5 characters long';
-    }
-
-    setErrors(errors);
-
+  
+    const validateField = (fieldName, value) => {
+      if (!value.trim()) {
+        errors[fieldName] = `${fieldName} is required`;
+      }
+    };
+  
+    const validateEmail = (fieldName, value) => {
+      validateField(fieldName, value);
+      if (!errors[fieldName] && !/^[a-zA-Z0-9._]+@[a-zA-Z.-]+\.[com]{3,}$/.test(value)) {
+        errors[fieldName] = 'Email is invalid';
+      }
+    };
+  
+    validateEmail('email', email);
+    validateField('password', password);
+  
+    setErrors(errors); // Update the state with errors
+  
     // Return true if there are no errors, false otherwise
     return Object.keys(errors).length === 0;
   };

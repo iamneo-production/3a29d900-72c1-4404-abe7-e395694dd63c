@@ -14,6 +14,7 @@ function Addadmin(){
   const [errors, setErrors] = useState({});
   const [userRole, setUserRole] = useState('admin');
   const navigate = useNavigate();
+  const MIN_PASSWORD_LENGTH = 6;
 
   const validateForm = () => {
     const errors = {};
@@ -29,8 +30,8 @@ function Addadmin(){
     // Password validation
     if (!password) {
       errors.password = 'Password is required';
-    } else if (password.length < 6) {
-      errors.password = 'Password should be at least 6 characters long';
+    } else if (password.length < MIN_PASSWORD_LENGTH) {
+      errors.password = `Password should be at least ${MIN_PASSWORD_LENGTH} characters long`;
     }
 
     // Confirm password validation
