@@ -16,11 +16,12 @@ function Jobseekerdashboard() {
 
     useEffect(() => {
         getApiData();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     useEffect(() => {
         filterData();
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [data]);
 
     const getApiData = () => {
