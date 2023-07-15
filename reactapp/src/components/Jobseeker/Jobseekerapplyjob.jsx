@@ -69,7 +69,7 @@ function Jobseekerapplyjob() {
 
         if(personEmail === ""){
             errors.personEmail = "Email is Required";
-        } else if (!/\S+@\S+\.\S+/.test(personEmail)) {
+        } else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,}$/.test(personEmail)) {
             errors.personEmail = 'Invalid email address';
         }
 

@@ -1,6 +1,5 @@
 .JS_chatbox {
   position: fixed;
-  right: auto;
   top: 50%;
   transform: translateY(-50%);
   width: 320px;
