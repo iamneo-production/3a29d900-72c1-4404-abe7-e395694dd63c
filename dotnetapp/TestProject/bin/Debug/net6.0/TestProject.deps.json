@@ -1204,6 +1204,7 @@
       },
       "dotnetapp/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNet.Cors": "5.0.0",
           "Microsoft.AspNet.WebApi.Cors": "5.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.0",
           "Microsoft.EntityFrameworkCore.InMemory": "6.0.0",

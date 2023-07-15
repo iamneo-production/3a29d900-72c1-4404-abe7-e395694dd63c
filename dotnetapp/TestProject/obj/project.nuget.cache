@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uwX43tMYkrBGpPM4G1SpXpvIwKrLqvS2yFvmwZl8gt3M1f/ul24Em7H/533FYKADfLDTGuCTIn7jkJSO5TxBBg==",
+  "dgSpecHash": "oxuaOQ9L182eP34On3Y1k5NGAAzyiVChRm7Kq/cqgw1wEUaWWOqkViahDnIQ8iFdoBMhDjid197LL5qTTqhEbQ==",
   "success": true,
   "projectFilePath": "/home/coder/project/workspace/dotnetapp/TestProject/TestProject.csproj",
   "expectedPackageFiles": [
@@ -110,12 +110,6 @@
     "/home/coder/.nuget/packages/system.xml.xdocument/4.0.11/system.xml.xdocument.4.0.11.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /home/coder/project/workspace/dotnetapp/TestProject/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",
