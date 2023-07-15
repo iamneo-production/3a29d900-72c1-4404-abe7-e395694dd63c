@@ -77,7 +77,7 @@ function Addadmin(){
         }
       } catch (error) {
         console.log(error);
-        // setIsLoading(false);
+        
       }
     } else {
       setErrors(validateForm);

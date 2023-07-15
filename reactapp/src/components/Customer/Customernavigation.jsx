@@ -77,7 +77,7 @@ function Customernavigation() {
         itemStyle.backgroundColor = 'lightgrey';
     }else if(logoutHovered){
         itemStyle2.backgroundColor = 'lightgrey';
-    };
+    }
 
     const handelProfile = () => {
         navigate('/customer/profile')

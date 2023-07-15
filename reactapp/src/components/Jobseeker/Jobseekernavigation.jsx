@@ -91,7 +91,7 @@ function Jobseekernavigation() {
         itemStyle1.backgroundColor = 'grey';
     }else if(reviewHovered){
         itemStyle2.backgroundColor = 'grey';
-    }else if(logoutHovered){
+    }else {
         itemStyle3.backgroundColor = 'grey';
     };
 
