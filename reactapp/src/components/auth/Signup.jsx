@@ -17,6 +17,8 @@ const Signup = (props) => {
 
   const validateForm = () => {
     const errors = {};
+    const MIN_PASSWORD_LENGTH = 6;
+    const message = 'password is required';
 
     // Name validation
     if (!userName) {
@@ -26,15 +28,15 @@ const Signup = (props) => {
     // Email validation
     if (!email) {
       errors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
+    } else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,}$/.test(email)) {
       errors.email = 'Invalid email address';
     }
 
     // Password validation
     if (!password) {
-      errors.password = 'Password is required';
-    } else if (password.length < 6) {
-      errors.password = 'Password should be at least 6 characters long';
+      errors.password = `${message}`;
+    } else if (password.length < MIN_PASSWORD_LENGTH) {
+      errors.password = `Password should be at least ${MIN_PASSWORD_LENGTH} characters long`;
     }
 
     // Confirm password validation
