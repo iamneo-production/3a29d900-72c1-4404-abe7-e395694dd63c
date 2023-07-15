@@ -91,9 +91,9 @@ function Jobseekernavigation() {
         itemStyle1.backgroundColor = 'grey';
     }else if(reviewHovered){
         itemStyle2.backgroundColor = 'grey';
-    }else {
+    }else if(logoutHovered){
         itemStyle3.backgroundColor = 'grey';
-    };
+    }
 
     const handelProfile = () => {
         navigate('/jobseeker/profile');
