@@ -93,7 +93,7 @@ function Jobseekernavigation() {
         itemStyle2.backgroundColor = 'grey';
     }else if(logoutHovered){
         itemStyle3.backgroundColor = 'grey';
-    };
+    }
 
     const handelProfile = () => {
         navigate('/jobseeker/profile');
