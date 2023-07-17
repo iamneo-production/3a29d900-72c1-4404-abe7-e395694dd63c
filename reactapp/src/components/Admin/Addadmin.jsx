@@ -1,30 +1,27 @@
+
 import React, { useState } from 'react';
-import './Signup.css';
 import axios from '../../axios.jsx';
 import { useNavigate } from 'react-router-dom';
 import { Form, Button } from 'react-bootstrap';
 import { ToastContainer, toast } from 'react-toastify';
+import './admin.css';
 
-const Signup = (props) => {
-  const [userName, setuserName] = useState('');
+function Addadmin(){
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [mobileNumber, setMobileNumber] = useState('');
   const [errors, setErrors] = useState({});
-  const [userRole, setUserRole] = useState('user');
+  const [userRole, setUserRole] = useState('admin');
   const navigate = useNavigate();
+  
 
   const validateForm = () => {
     const errors = {};
+    setUserRole('admin');
     const MIN_PASSWORD_LENGTH = 6;
     const message = 'password is required';
-
-    // Name validation
-    if (!userName) {
-      errors.userName = 'Name is required';
-    }
-
+    
     // Email validation
     if (!email) {
       errors.email = 'Email is required';
@@ -62,34 +59,28 @@ const Signup = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm()) {
-      const user = {
+      const admin = {
         email,
         password,
-        userName,
         mobileNumber,
         userRole
       };
-      console.log(user);
-      let endpoint = '';
-
-      if (userRole === 'admin') {
-        endpoint = 'admin/signup';
-      } else {
-        endpoint = 'user/signup'
-      }
+      
 
       try {
-        const res = await axios.post(endpoint, user);
+        const res = await axios.post('admin/signup', admin);
+        console.log(res.data);
         if (res.data === "Email already exists") {
           toast.error(res.data);
         } else {
           toast.success(res.data)
           // Simulate a delay of 2 seconds
           await new Promise((resolve) => setTimeout(resolve, 2000));
-          navigate('/');
+          navigate('/Admin/dashboard');
         }
       } catch (error) {
         console.log(error);
+        
       }
     } else {
       setErrors(validateForm);
@@ -99,28 +90,20 @@ const Signup = (props) => {
 
 
   return (
-    <div className="signup-container">
-      <div className="signup-content">
-        <h2 className="loginHead">Register</h2>
-      
+    <div className='admin_signup'>
+      <div className="adm_signupform">
         <Form >
           <ToastContainer />
-          <Form.Select className="select" id='admin/user/jobseeker' value={userRole} onChange={(e) => setUserRole(e.target.value)}>
-            <option >Enter User/job seeker</option>
-            <option id='user' value="user">User</option>
-            <option id='job seeker' value="job seeker">job seeker</option>
-          </Form.Select>
-          {errors.userRole && <span>{errors.userRole}</span>}
-          <br />
+          <Form.Label   >
+            Add New Admin
+          </Form.Label>
+          <Form.Group className="mb-3" >
+            <Form.Control type="label" id="userRole" value={userRole}  readOnly/>
+          </Form.Group>
           
           <Form.Group className="mb-3" >
             <Form.Control type="text" id="email" placeholder=" Enter email" onChange={(e) => setEmail(e.target.value)} />
             {errors.email && <span>{errors.email}</span>}
-          </Form.Group>
-
-          <Form.Group className="mb-3" >
-            <Form.Control type="text" id="username" placeholder=" Enter Username" onChange={(e) => setuserName(e.target.value)} required />
-            {errors.userName && <span>{errors.userName}</span>}
           </Form.Group>
 
           <Form.Group className="mb-3" >
@@ -139,20 +122,14 @@ const Signup = (props) => {
           </Form.Group>
           <div className="button">
             <Form.Group>
-              <Button variant="primary" type="submit" id="submitButton" onClick={handleSubmit} >Submit</Button>
+              <Button variant="dark"  id="submitButton" onClick={handleSubmit} >Submit</Button>
             </Form.Group>
             <br />
           </div>
-          <div className='text'>
-            <Form.Text className="text-muted">
-              <b> Already a user? </b>
-              <a href='/' id='signInLink'> Login</a>
-            </Form.Text>
-          </div>
         </Form>
       </div>
-    </div>
-  )
+      </div>
+  );
 }
 
-export default Signup;
+export default Addadmin;

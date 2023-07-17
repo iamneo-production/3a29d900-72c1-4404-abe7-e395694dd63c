@@ -77,7 +77,7 @@ function Adminnavigation() {
         itemStyle3.backgroundColor = 'grey';
     }else if(addHovered){
         itemStyle4.backgroundColor = 'grey';
-    };
+    }
 
     const handelReport = () => {
         navigate('/Admin/Report');
